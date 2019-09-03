@@ -1,13 +1,18 @@
 import React from 'react';
-//import logo from './logo.svg';
-//import './App.css';
+import ReactDOM from 'react-dom';
+import './mysass.scss';
 
-function App() {
-  return (
-    <div className="App">
-      <h1>Hello World!</h1>
-    </div>
-  );
+class MyHeader extends React.Component {
+  render() {
+    return (
+      <div>
+      <h1>Hello Style!</h1>
+      <p>Add a little style!.</p>
+      </div>
+    );
+  }
 }
 
-export default App;
+ReactDOM.render(<MyHeader />, document.getElementById('root'));
+
+export default MyHeader;
